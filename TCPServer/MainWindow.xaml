@@ -1,0 +1,34 @@
+﻿<Window x:Class="TCPServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TCPServer"
+        mc:Ignorable="d"
+        Title="TCP listner" Height="375" Width="368">
+    <Grid>
+        <StackPanel
+            Orientation="Vertical"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Stretch"
+            Margin="10,0,10,0">
+            <Button 
+                x:Name="Start"
+                Content="Пуск"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Stretch" Click="Start_Click"/>
+            <TextBlock
+                x:Name="Result"
+                TextWrapping="Wrap"
+                FontSize="14" VerticalAlignment="Center"/>
+        </StackPanel>
+        <ProgressBar
+            x:Name="Status"
+            IsEnabled="False"
+            IsIndeterminate="True"
+            VerticalAlignment="Bottom" 
+            VerticalContentAlignment="Center"
+            Height="15" 
+            Visibility="Hidden"/>
+    </Grid>
+</Window>
