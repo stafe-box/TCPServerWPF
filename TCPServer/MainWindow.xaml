@@ -17,8 +17,9 @@
                 Content="Пуск"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Stretch" Click="Start_Click"/>
-            <TextBlock
+            <TextBox
                 x:Name="Result"
+                IsReadOnly="True"
                 TextWrapping="Wrap"
                 FontSize="14" VerticalAlignment="Center"/>
         </StackPanel>
